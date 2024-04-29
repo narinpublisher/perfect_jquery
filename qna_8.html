@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang='ko'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width'>
+    <title>제이쿼리 테스트</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $ ( document ).ready( function () {
+            $( "#myChoice" ).change( function() {
+                alert( 
+					$( "#myChoice" ).val() + '\n' + 
+					$( "#myChoice option:selected" ).text()
+				);
+			});
+		});
+    </script>
+</head>
+<body>
+
+    <select id="myChoice">
+		<option value="1">딸기</option>
+		<option value="2">사과</option>
+		<option value="3">오렌지</option>
+		<option value="4">배</option>
+		<option value="5">포도</option>
+	</select>    
+
+</body>
+</html>

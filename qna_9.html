@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang='ko'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width'>
+    <title>제이쿼리 테스트</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $ ( document ).ready( function () {
+            $( "form [type='text'] ").prop( "disabled",  true );
+			$( "form [type='email'] ").prop( "disabled", false );
+		});
+    </script>
+	<style>
+		input {display:block; margin-bottom:5px;}
+	</style>
+</head>
+<body>
+
+    <form action="#" method='post'>  
+		<input type='text' placeholder='홍길동'>
+		<input type='email' placeholder='이메일' required>
+		<button> 확 인 </button>
+	</form>
+
+</body>
+</html>

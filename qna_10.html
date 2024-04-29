@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang='ko'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width'>
+    <title>제이쿼리 테스트</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $ ( document ).ready( function () {
+            $( "#apple ").prop( "checked",  true );
+			//$( "#tomato, #kiwi, #grape").prop( "checked", false );
+			$('[type="checkbox"]').change( function(){
+				let x =  $('input:checked+label').text();
+				$('[type="text"]').val( x );			});
+
+		});
+    </script>
+</head>
+<body>
+
+	<form>
+	  <input type="checkbox" name="myfruits" id='apple'><label for='apple'>사과 </label><br>
+	  <input type="checkbox" name="myfruits" id='tomato'><label for='tomato'>토마토 </label><br>
+	  <input type="checkbox" name="myfruits" id='kiwi'><label for='kiwi'>키위 </label><br>
+	  <input type="checkbox" name="myfruits" id='grape'><label for='grape'>포도</label><br>	 
+	  선택한 과일들: <input type="text" name="myfruits"><br>
+	</form>
+
+</body>
+</html>
