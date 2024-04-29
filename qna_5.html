@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang='ko'>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width'>
+<title>제이쿼리 테스트</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $ ( document ).ready ( function () {
+        $( "#" + $.escapeSelector( '#narin.pub' ) ).children( 'h2' ).addClass( 'skyblue' );
+    });
+</script> 
+<style>
+   .skyblue { background: skyblue; padding:10px;}
+</style>
+<body>
+	<section id="#narin.pub">
+		<h2>텍스트를 입력받아서 사용하기</h2>
+	</section>
+</body>
+</html>

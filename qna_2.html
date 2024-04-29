@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang='ko'>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width'>
+<title>제이쿼리 테스트</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $ (document).ready ( function () {
+
+        if ( $( "#pub" ).length ) { 
+            $( "#pub" ).show(); 
+        }
+
+    });
+</script>
+</head>
+<body>
+
+    <h2 id='pub' style="display:none; color:dodgerblue;">숨겨진 요소를 찾아서 보이게 하라</h2>
+    <section>특정 클래스 설정 여부 테스트 중</section>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $ ( document ).ready ( function () {
+        $('#info input').change( function() {
+            const email = $( this ).val();
+            $( "#info p" ).text( email ) ;
+        });	
+    });
+</script> 
+<style>
+   p { background: #ddd; padding:10px 20px; }
+</style>
+<body>
+      <section id="info">
+    	<h2>텍스트를 입력받아서 사용하기</h2>
+        	<input type="text">        
+        	<p></p>
+     </section>    
+
+</body>
+</html>

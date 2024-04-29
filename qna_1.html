@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang='ko'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width'>
+    <title>제이쿼리 테스트</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $ ( document ).ready( function () {
+            $( "p" ).click( function() {
+                if ( $( this ).hasClass( "narin" ) ) {
+                    $( this ).css( { background : 'pink' } );
+                }
+        });
+    });
+    </script>
+</head>
+<body>
+
+    <p>특정 클래스 설정 여부 테스트 중</p>
+    <p class="narin">특정 클래스 설정 여부 테스트 중</p>    
+
+</body>
+</html>
